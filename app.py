@@ -45,7 +45,7 @@ data3 = data3[data3["State"]!="India"]
 data3.head()
 data3 = data3.groupby('State').last().reset_index()
 data3 = data3.drop(columns=['Updated On'])
-data3['id']=s_code['id']
+data3['id']=s_code
 
 
 # In[16]:
