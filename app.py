@@ -37,7 +37,7 @@ for i in soup.find_all('div',attrs={'class':'col-sm-2 btns'}):
 # In[13]:
 
 
-s_code = pd.read_csv('s_code.csv')
+s_code =  [35,28,12,18,10,4,22,26,7,30,24,6,2,1,20,29,32,37,31,23,27,14,17,15,13,21,34,3,8,11,33,0,16,9,5,19]
 
 
 # In[14]:
@@ -74,9 +74,8 @@ for feature in states["features"]:
 
 
 st.markdown("# COVID-19 Vaccination Detailed Analysis (India)") 
-img = Image.open('C:/Users/Darshit/shield.jpg')
-if img.mode != 'RGB':
-    img = img.convert('RGB')
+img ="https://www.conehealth.com/app/files/public/63329ab8-ad31-4fef-9a1e-2ca76fdd5faf/WM%20Johnson%20Johnson%20COVID-19%20Vaccine-%206%20Facts%20You%20Should%20Know.png"
+
 st.image(img, caption = "Source: gislounge.com", width=700)
 if st.checkbox('view_data'):
     st.subheader('Vaccination Data')
