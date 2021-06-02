@@ -67,7 +67,7 @@ for feature in states["features"]:
 st.markdown("# COVID-19 Vaccination Detailed Analysis (India)") 
 img ="https://www.conehealth.com/app/files/public/63329ab8-ad31-4fef-9a1e-2ca76fdd5faf/WM%20Johnson%20Johnson%20COVID-19%20Vaccine-%206%20Facts%20You%20Should%20Know.png"
 
-st.image(img, caption = "Source: gislounge.com", width=700)
+st.image(img, caption = "Source: gislounge.com", width=370)
 if st.checkbox('view_data'):
     st.subheader('Vaccination Data')
     st.write(data3)
