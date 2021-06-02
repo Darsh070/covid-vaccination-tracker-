@@ -12,6 +12,9 @@ import plotly.express as px
 import streamlit as st
 import plotly.io as pio
 import json
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+
 pio.renderers.default = 'browser'
 
 
