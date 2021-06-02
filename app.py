@@ -6,19 +6,12 @@
 
 import pandas as pd
 import numpy as np
-import os
-import urllib.request
-import requests
-from bs4 import BeautifulSoup
-import camelot.io as camelot
-import ghostscript
-import html5lib
-import json
 from PIL import Image
+import pickle
 import plotly.express as px
 import streamlit as st
-import folium
 import plotly.io as pio
+import json
 pio.renderers.default = 'browser'
 
 
@@ -26,12 +19,7 @@ pio.renderers.default = 'browser'
 
 
 
-url = 'http://www.mohfw.gov.in/'
-r=requests.get(url)
-thepage = urllib.request.urlopen(url)
-soup = BeautifulSoup(thepage)
-for i in soup.find_all('div',attrs={'class':'col-sm-2 btns'}):
-    pdf = i.a['href']    
+  
 
 
 # In[13]:
@@ -144,9 +132,9 @@ if st.sidebar.checkbox('Map'):
 # In[19]:
 
 
-import streamlit as st
-import pickle
-import numpy as np
+
+
+
 model = pickle.load(open('covid_model7_linear_model.pkl','rb'))
 
 st.sidebar.subheader('Model')
