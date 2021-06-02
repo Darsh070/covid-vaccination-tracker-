@@ -1,0 +1,13 @@
+requests==2.24.0
+ghostscript==0.7
+streamlit==0.82.0
+html5lib==1.0.1
+camelot_py==0.8.2
+~lotly==4.4.1
+pandas==1.0.5
+numpy==1.19.0
+folium==0.12.1
+beautifulsoup4==4.9.3
+camelot==13.04.13-gpl-pyqt
+Pillow==8.2.0
+plotly==4.14.3
