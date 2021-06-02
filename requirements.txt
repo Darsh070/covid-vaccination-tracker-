@@ -6,7 +6,6 @@ pandas==1.0.5
 streamlit==0.82.0
 requests==2.24.0
 ghostscript==0.7
-~lotly==4.4.1
 beautifulsoup4==4.9.3
 camelot==13.04.13-gpl-pyqt
 Pillow==8.2.0
